@@ -146,7 +146,7 @@ function triggerSelfDestruct() {
     // Add screen shake effect
     document.body.classList.add('screen-shake');
     
-    // Start countdown audio 1 second earlier (2 seconds instead of 3)
+    // Start countdown audio 
     setTimeout(() => {
         if (countdownAudio) {
             countdownAudio.currentTime = 0;
