@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Self-destruct Museum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading screen section -->
+    <div id="loading-screen">
+        <h1>RETRO SYSTEM LOADING...</h1>
+    </div>
+
+    <!-- Progress bar -->
+    <div id="progress-container" class="progress-container" style="display: none;">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Loading messages -->
+    <div id="loading-messages">
+        Initializing system...
+    </div>
+
+    <!-- Self-destruct warning -->
+    <div id="self-destruct-warning" style="display: none;">
+        <h2>🚨 WARNING: SELF-DESTRUCT INITIATED 🚨</h2>
+    </div>
+
+    <!-- Countdown Display -->
+    <div id="countdown-display" style="display: none;">
+        <span id="countdown-number">10</span>
+    </div>
+
+    <!-- Final Explosion/Goodbye -->
+    <div id="explosion-goodbye" style="display: none;">
+        <h1>💥 BOOM! 💥</h1>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>🚨 RETRO SELF-DESTRUCT 🚨</h1>
+        <p>WARNING: This system will self-destruct!</p>
+        <button id="start-btn">INITIATE DESTRUCTION</button>
+    </div>
+
+    <!-- Audio for sound effects -->
+    <audio id="startup-audio" preload="auto">
+        <source src="sounds/startup.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="loading-audio" preload="auto">
+        <source src="sounds/loading.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="warning-audio" preload="auto">
+        <source src="sounds/warning.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="countdown-audio" preload="auto">
+        <source src="sounds/countdown.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="explosion-audio" preload="auto">
+        <source src="sounds/explosion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
